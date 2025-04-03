@@ -1,0 +1,27 @@
+{
+  "name": "gotund",
+  "version": "1.0.0",
+  "description": "A blogging application",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index."
+  },
+  "author": "Vikas.m",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "colors": "^1.4.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.14.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.7"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/sequelize": "^4.28.20",
+    "nodemon": "^3.1.9"
+  }
+}
