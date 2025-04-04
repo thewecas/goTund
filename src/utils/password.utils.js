@@ -1,10 +1,14 @@
 import bcrypt from "bcrypt";
-import { AppConst } from "../env.js";
+import { AppConst } from "#env";
 
-export const getHash = (password) => {
-  return bcrypt.hash(password, AppConst.hashRounds);
+const PasswordUtil = {
+  getHash: (password) => {
+    return bcrypt.hash(password, AppConst.hashRounds);
+  },
+
+  compareHash: (password, hash) => {
+    return bcrypt.compare(password, hash);
+  },
 };
 
-export const compareHash = (password, hash) => {
-  return bcrypt.compare(password, hash);
-};
+export default PasswordUtil;

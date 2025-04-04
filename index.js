@@ -1,6 +1,6 @@
-import { Server } from "./src/env.js";
 import app from "./src/app.js";
-import sequelize from "./src/config/db.js";
+import sequelize from "#config/db.js";
+import { Server } from "#env";
 
 const startServer = async () => {
   try {

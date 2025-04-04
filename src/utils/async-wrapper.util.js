@@ -1,4 +1,4 @@
-import sequelize from "../config/db.js";
+import sequelize from "#config/db.js";
 
 const asyncWrapper = (handler, useTransaction = false) => {
   return async (req, res, next) => {

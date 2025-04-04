@@ -7,5 +7,3 @@ UserAuth.belongsTo(User);
 
 User.hasMany(SocialHandles);
 SocialHandles.belongsTo(User);
-
-export { User, UserAuth, SocialHandles };

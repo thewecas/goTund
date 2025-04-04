@@ -1,12 +1,16 @@
 import jwt from "jsonwebtoken";
-import { AppConst } from "../env.js";
+import { AppConst } from "#env";
 
-export const signToken = (payload) => {
-  return jwt.sign(payload, AppConst.tokenSecret, {
-    expiresIn: "10h",
-  });
+const TokenUtil = {
+  signToken: (payload) => {
+    return jwt.sign(payload, AppConst.tokenSecret, {
+      expiresIn: "10h",
+    });
+  },
+
+  verifyToken: (token) => {
+    return jwt.verify(token, AppConst.tokenSecret);
+  },
 };
 
-export const verifyToken = (token) => {
-  return jwt.verify(token, AppConst.tokenSecret);
-};
+export default TokenUtil;
