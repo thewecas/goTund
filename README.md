@@ -1,7 +1,3 @@
-# GoTund - A Blogging Application
-
-I'll create a comprehensive README file for your GoTund blogging application that will help developers understand the codebase and architecture quickly.
-
 # GoTund - Blogging Application
 
 A modern blogging platform built with Node.js, Express, and PostgreSQL.
