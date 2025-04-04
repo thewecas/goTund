@@ -1,6 +1,7 @@
 import AuthService from "#services/auth.service.js";
 import UserService from "#services/user.service.js";
 import asyncWrapper from "#utils/async-wrapper.util.js";
+import PasswordUtil from "#utils/password.utils.js";
 import TokenUtil from "#utils/token.utils.js";
 
 const AuthController = {

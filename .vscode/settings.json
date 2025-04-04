@@ -2,5 +2,17 @@
   "cSpell.words": [
     "gotund",
     "Vikas"
+  ],
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5432,
+      "askForPassword": true,
+      "driver": "PostgreSQL",
+      "name": "goTund_blog",
+      "database": "gotund_blog",
+      "username": "postgres"
+    }
   ]
 }
